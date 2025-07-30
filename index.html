@@ -21,8 +21,93 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
+    
+    <style>
+        .company-info {
+            display: flex; /* Usamos flexbox para alinear los elementos en línea */
+            align-items: center; /* Alinea verticalmente el logo y el texto */
+            justify-content: start; /* Alinea los elementos al inicio de la fila */
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center; /* Alinea el logo y el texto verticalmente */
+        }
+
+        .logo-image {
+            width: 30px; /* Ajusta el tamaño del logo */
+            height: auto; /* Mantiene la relación de aspecto */
+            margin-right: 10px; /* Espacio entre el logo y el nombre */
+        }
+
+        .company-name {
+            font-size: 1.2em; /* Tamaño de fuente ajustado */
+            font-weight: bold; /* Puedes ajustar el peso de la fuente */
+        }
+
+        .cert-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cert-badge {
+            margin-bottom: 15px;
+        }
+
+        .cert-badge-image {
+            width: 50px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+
+        .cert-content {
+            text-align: center;
+        }
+
+        .cert-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .cert-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .cert-meta {
+            margin-top: 10px;
+        }
+
+        .cert-date {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .cert-status {
+            font-size: 0.9em;
+            color: green;
+            font-weight: bold;
+        }
+
+        .cert-link {
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 1em;
+            color: #007bff;
+        }
+
+        .cert-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body class="dark-mode"> <!-- Default to dark mode -->
+<body class="dark-mode">
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -79,9 +164,18 @@
                                     <span class="text-gradient">Jerónimo Miras</span>
                                     <br>Cybersecurity Professional
                                 </h1>
-                                <p class="hero-subtitle">SOC Analyst | Cloud Security</p>
+                                <div class="company-info">
+                                    <span class="company-label">Currently working at</span>
+                                    <div class="company-logo">
+                                        <img src="assets/apolo_cybersecurity_logo.jpg" alt="Apolo Cybersecurity Logo" class="logo-image">
+                                        <span class="company-name">Apolo Cybersecurity</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <p class="hero-subtitle">
+                            SOC Analyst | Cloud Security
+                        </p>
                         <div class="hero-buttons">
                             <a href="https://github.com/jeroSampayo" class="btn btn-primary" target="_blank">
                                 <i class="fab fa-github"></i>
@@ -99,32 +193,131 @@
 
         <!-- About Section -->
         <section id="about" class="page-section">
+            <div class="about-header">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <img src="assets/jero.png" alt="Jerónimo Miras" class="profile-image">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Jerónimo Miras</h1>
+                        <p class="profile-title">SOC Analyst @ Apolo Cybersecurity</p>
+                    </div>
+                </div>
+            </div>
+            
             <div class="container">
-                <h2>About Me</h2>
-                <p>I’m a passionate cybersecurity professional with expertise in SOC operations and threat detection.</p>
-                <!-- More about you here -->
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <h2 class="card-title">About Me</h2>
+                        </div>
+                        <div class="card-content">
+                            <div class="bio-section">
+                                <p class="bio-text">
+                                    I’m a passionate cybersecurity professional with expertise in SOC operations and threat detection. 
+                                    Currently working as a SOC Analyst, focusing on security monitoring, incident response, and threat analysis.
+                                </p>
+                                <p class="bio-text">
+                                    My background in Network Systems Administration, along with my ongoing studies in Computer Engineering, 
+                                    fuels my interest in cloud security, automation, and innovative security solutions.
+                                </p>
+                            </div>
+                            <div class="skills-section">
+                                <h3 class="skills-title">Technical Skills</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-category">
+                                        <h4 class="category-title">Security Tools</h4>
+                                        <ul class="skills-list">
+                                            <li>SIEM Platforms (Wazuh, Splunk)</li>
+                                            <li>OpenSearch & Elasticsearch</li>
+                                            <li>Threat Detection & Analysis</li>
+                                            <li>Incident Response</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h4 class="category-title">Programming & Automation</h4>
+                                        <ul class="skills-list">
+                                            <li>Basic Python Development</li>
+                                            <li>Bash Scripting</li>
+                                            <li>Security Automation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-category">
+                                        <h4 class="category-title">Cloud & Infrastructure</h4>
+                                        <ul class="skills-list">
+                                            <li>AWS & Azure Security</li>
+                                            <li>Cloud Networking & Access Control</li>
+                                            <li>Container Security</li>
+                                            <li>Cloud Resource Deployment (CLI & Console)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="responsibilities-section">
+                                <h3 class="responsibilities-title">Current Responsibilities</h3>
+                                <p class="responsibilities-text">
+                                    As a SOC Analyst, I analyze security events, develop automation tools, and conduct proactive monitoring 
+                                    for various enterprise clients.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goals-section">
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="goal-content">
+                                <h3 class="goal-title">Professional Aspirations</h3>
+                                <h4 class="goal-subtitle">Cloud Security Architect</h4>
+                                <p class="goal-description">
+                                    Aiming to specialize in cloud architecture, secure infrastructure design, and multi-cloud governance.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="goal-content">
+                                <h3 class="goal-title">Upcoming Goals</h3>
+                                <ul class="goals-list">
+                                    <li>Obtain Security+ and EjptV2 certifications</li>
+                                    <li>Improve expertise in threat hunting and automation</li>
+                                    <li>Contribute to open-source security tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="page-section">
             <div class="container">
-                <h2>Projects</h2>
-                <p>Here are some of my projects:</p>
-                <!-- Add your project details here -->
+                <div class="section-header">
+                    <h2 class="section-title">GitHub Projects</h2>
+                    <p class="section-subtitle">Open source contributions and security tools</p>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be loaded dynamically -->
+                </div>
             </div>
         </section>
 
         <!-- Certifications Section -->
         <section id="certifications" class="page-section">
             <div class="container">
-                <h2>Certifications</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">Professional credentials and achievements</p>
+                </div>
                 <div class="certifications-grid">
-                    <!-- Certifications cards go here -->
-                    <!-- Example of certification card -->
+                    <!-- eJPTV2 Certification -->
                     <div class="cert-card">
                         <div class="cert-badge">
-                            <img src="assets/inetraining_logo.jpg" alt="eJPTV2 Certification" class="cert-badge-image">
+                            <img src="assets/eJPTV2_logo.jpg" alt="eJPTV2 Certification" class="cert-badge-image">
                         </div>
                         <div class="cert-content">
                             <h3>eJPTV2</h3>
@@ -136,7 +329,29 @@
                                 <span class="cert-date">2025</span>
                                 <span class="cert-status active">Active</span>
                             </div>
-                            <a href="https://certs.ine.com/e662f8ea-5cd7-4282-9714-87d335ab7e2a#acc.vGIVusBX" class="cert-link" target="_blank">
+                            <a href="https://www.credly.com/badges/a8c113fb-1ba2-4ace-8585-741ea6d73647/linked_in_profile" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AI-900 Certification -->
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <img src="assets/AI-900_logo.jpg" alt="AI-900 Certification" class="cert-badge-image">
+                        </div>
+                        <div class="cert-content">
+                            <h3>AI-900</h3>
+                            <p class="cert-issuer">Microsoft</p>
+                            <p class="cert-description">
+                                Microsoft Certified: Azure AI Fundamentals certification covering the fundamental concepts of artificial intelligence and Microsoft Azure AI services.
+                            </p>
+                            <div class="cert-meta">
+                                <span class="cert-date">2025</span>
+                                <span class="cert-status active">Active</span>
+                            </div>
+                            <a href="https://www.microsoft.com/en-us/learning/ai-900-azure-ai-fundamentals.aspx" class="cert-link" target="_blank">
                                 <i class="fas fa-external-link-alt"></i>
                                 View Certificate
                             </a>
@@ -150,7 +365,27 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Jerónimo Miras</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/jeroSampayo" class="social-link" aria-label="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeronimomiras/" class="social-link" aria-label="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:jeronimo.miras@proton.me" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-info">
+                        <p class="footer-copyright">&copy; 2025 Jerónimo Miras</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
