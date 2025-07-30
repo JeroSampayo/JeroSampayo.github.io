@@ -21,6 +21,30 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
+    
+    <style>
+        .company-info {
+            display: flex; /* Usamos flexbox para alinear los elementos en línea */
+            align-items: center; /* Alinea verticalmente el logo y el texto */
+            justify-content: start; /* Alinea los elementos al inicio de la fila */
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center; /* Alinea el logo y el texto verticalmente */
+        }
+
+        .logo-image {
+            width: 30px; /* Ajusta el tamaño del logo */
+            height: auto; /* Mantiene la relación de aspecto */
+            margin-right: 10px; /* Espacio entre el logo y el nombre */
+        }
+
+        .company-name {
+            font-size: 1.2em; /* Tamaño de fuente ajustado */
+            font-weight: bold; /* Puedes ajustar el peso de la fuente */
+        }
+    </style>
 </head>
 <body class="dark-mode">
     <!-- Navigation -->
@@ -266,4 +290,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
