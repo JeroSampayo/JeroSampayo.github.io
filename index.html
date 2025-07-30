@@ -44,6 +44,67 @@
             font-size: 1.2em; /* Tamaño de fuente ajustado */
             font-weight: bold; /* Puedes ajustar el peso de la fuente */
         }
+
+        .cert-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cert-badge {
+            margin-bottom: 15px;
+        }
+
+        .cert-badge-image {
+            width: 50px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+
+        .cert-content {
+            text-align: center;
+        }
+
+        .cert-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .cert-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .cert-meta {
+            margin-top: 10px;
+        }
+
+        .cert-date {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .cert-status {
+            font-size: 0.9em;
+            color: green;
+            font-weight: bold;
+        }
+
+        .cert-link {
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 1em;
+            color: #007bff;
+        }
+
+        .cert-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="dark-mode">
@@ -253,7 +314,49 @@
                     <p class="section-subtitle">Professional credentials and achievements</p>
                 </div>
                 <div class="certifications-grid">
-                    <!-- Certificates go here -->
+                    <!-- eJPTV2 Certification -->
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <img src="assets/eJPTV2_logo.jpg" alt="eJPTV2 Certification" class="cert-badge-image">
+                        </div>
+                        <div class="cert-content">
+                            <h3>eJPTV2</h3>
+                            <p class="cert-issuer">eLearnSecurity</p>
+                            <p class="cert-description">
+                                eLearnSecurity Junior Penetration Tester v2 certification focusing on practical penetration testing skills and web application security.
+                            </p>
+                            <div class="cert-meta">
+                                <span class="cert-date">2025</span>
+                                <span class="cert-status active">Active</span>
+                            </div>
+                            <a href="https://www.credly.com/badges/a8c113fb-1ba2-4ace-8585-741ea6d73647/linked_in_profile" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AI-900 Certification -->
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <img src="assets/AI-900_logo.jpg" alt="AI-900 Certification" class="cert-badge-image">
+                        </div>
+                        <div class="cert-content">
+                            <h3>AI-900</h3>
+                            <p class="cert-issuer">Microsoft</p>
+                            <p class="cert-description">
+                                Microsoft Certified: Azure AI Fundamentals certification covering the fundamental concepts of artificial intelligence and Microsoft Azure AI services.
+                            </p>
+                            <div class="cert-meta">
+                                <span class="cert-date">2025</span>
+                                <span class="cert-status active">Active</span>
+                            </div>
+                            <a href="https://www.microsoft.com/en-us/learning/ai-900-azure-ai-fundamentals.aspx" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
