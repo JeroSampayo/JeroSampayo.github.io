@@ -154,9 +154,9 @@ class ProjectsManager {
                 language: "HTML/CSS/JS",
                 stars: 0,
                 forks: 0,
-                url: "https://github.com/7anfu/7anfu.github.io",
+                url: "https://github.com/jeroSampayo/jeroSampayo.github.io",
                 isPrivate: false,
-                readme: `## 🔒 7anfu's Portfolio
+                readme: `## 🔒 Portfolio
 
 A modern, responsive personal portfolio website showcasing my projects and certifications.
 
@@ -368,12 +368,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Console welcome message
     console.log(`
-    %c🔒 Welcome to Marc Pericàs Portfolio! 🔒
+    %c🔒 Welcome to Jerónimo Miras Portfolio! 🔒
     
     %cSOC Analyst | Computer Engineering Student
     Built with modern web technologies and security best practices.
     
-    %cGitHub: https://github.com/7anfu
+    %cGitHub: https://github.com/jeroSampayo
     `, 
     'color: #3b82f6; font-size: 20px; font-weight: bold;',
     'color: #64748b; font-size: 14px;',
@@ -411,13 +411,13 @@ document.addEventListener('keydown', (e) => {
 // Update page title based on current section
 function updatePageTitle(sectionName) {
     const titles = {
-        'home': 'Marc Pericàs - Cyber Security Portfolio',
-        'about': 'Marc Pericàs - About Me',
-        'projects': 'Marc Pericàs - Projects',
-        'certifications': 'Marc Pericàs - Certifications'
+        'home': 'Jerónimo Miras - Cyber Security Portfolio',
+        'about': 'Jerónimo Miras - About Me',
+        'projects': 'Jerónimo Miras - Projects',
+        'certifications': 'Jerónimo Miras - Certifications'
     };
     
-    document.title = titles[sectionName] || 'Marc Pericàs - Cyber Security Portfolio';
+    document.title = titles[sectionName] || 'Jerónimo Miras - Cyber Security Portfolio';
 }
 
 // Export for global access (if needed)
