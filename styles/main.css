@@ -946,6 +946,21 @@ a:hover {
     font-weight: 600;
 }
 
+/* ===== EXPERIENCE SECTION ===== */
+#experience {
+    padding: 4rem 0;
+    background: var(--bg-secondary);
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {
     display: flex;
